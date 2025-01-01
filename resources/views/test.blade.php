@@ -1,0 +1,3 @@
+<div>
+    {!! $note->htmlContent !!}
+</div>
