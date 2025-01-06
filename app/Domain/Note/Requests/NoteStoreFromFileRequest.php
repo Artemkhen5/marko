@@ -23,7 +23,7 @@ class NoteStoreFromFileRequest extends FormRequest
     {
         return [
             'title' => 'required|string',
-            'file' => 'required|file|mimetypes:text/plain|max:5120',
+            'file' => 'required|file|mimetypes:text/plain,text/markdown|max:5120',
         ];
     }
 }

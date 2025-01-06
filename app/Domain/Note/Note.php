@@ -3,11 +3,14 @@
 namespace App\Domain\Note;
 
 use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use League\CommonMark\CommonMarkConverter;
 
 class Note extends Model
 {
+    use HasFactory;
+
     protected $table = 'notes';
     protected $fillable = ['title', 'content'];
 
